@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial ,sans-serif;
+  font-size: 100%;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
+#ricky-and-morty {
+  animation: flip 2s linear infinite;
+  transform-style: preserve-3d;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.background {
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container-img {
+  display: flex;
+  height: 100px;
+  color: #105718;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  display: inline-flex;
+}
+
+.input-container button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#search-bar {
+  width: 43vw;
+  height: 5vh;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: rgb(187, 187, 187);
+  padding: 15px;
+}
+
+/*formulario*/
+
+.form button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  padding: 0.5rem;
+  font-size: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* cards dos personagens*/
+.list {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  animation: fadeIn 1s forwards;
+}
+
+.card {
+  --bs-card-bg: transparent;
+}
+
+.card-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.size-card {
+  width: 17rem;
+  height: 20rem;
+  transition: transform 0.3s ease;
+}
+
+.size-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#size-img {
+  width: 150px;
+  height: 150px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-body p {
+  font-size: 14px;
+  justify-content: left;
+  padding: 2px;
+}
+
+#cardBody {
+  display: inline-block;
+  padding: 10px;
+}
+
+h2 {
+  color: #438b42;
+  font-weight: 800;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.statusColor {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.green-status {
+  background-color: #56cd42;
+}
+
+.red-status {
+  background-color: #cd4242;
+}
+
+.gray-status {
+  background-color: #bbbbbb;
+}
+
+li {
+  width: 20px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/*buttons*/
+.buttons {
+  margin-top: 25px;
+  margin-bottom: 500px;
+}
+
+#pagination {
+  margin-left: 80px;
+}
+
+/*footer*/
+footer {
+  background-color: #1f2821;
+  color: #fff;
+  height: 300px;
+  width: 100%;
+}
+
+#credits {
+  font-weight: 700;
+  color: #438b42;
+}
